@@ -4,7 +4,7 @@
   "description": "cropping of images for game backends",
   "main": "main.js",
   "scripts": {
-    "steam": "steam.js"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
