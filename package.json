@@ -1,0 +1,32 @@
+{
+  "name": "SteamJS",
+  "version": "0.0.2",
+  "description": "cropping of images for game backends",
+  "main": "main.js",
+  "scripts": {
+    "steam": "steam.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinifi/SteamJS.git"
+  },
+  "keywords": [
+    "game",
+    "cropping"
+  ],
+  "author": "@kinifi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kinifi/SteamJS/issues"
+  },
+  "homepage": "https://github.com/kinifi/SteamJS#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "jimp": "^0.2.24",
+    "progress": "^1.1.8",
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.5"
+  }
+}
