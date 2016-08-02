@@ -28,6 +28,11 @@ module.exports = {
             type: 'string',
             required: true
           },
+          ImageQuality: {
+            message: '1-100',
+            type: 'integer',
+            required: true
+          },
           ImageSource: {
             type: 'array',
             required: true
@@ -49,7 +54,9 @@ module.exports = {
                     960,
                     640,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         //4 inch
@@ -60,7 +67,9 @@ module.exports = {
                     1136,
                     640,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         // 4.7-inch Retina screenshot
@@ -71,7 +80,9 @@ module.exports = {
                     1334,
                     750,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         // 5.5 inch
@@ -82,7 +93,9 @@ module.exports = {
                     2208,
                     1242,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         // iPad Screenshots
@@ -93,7 +106,9 @@ module.exports = {
                     2048,
                     1536,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         // iPad Pro Screenshots
@@ -104,7 +119,9 @@ module.exports = {
                     2732,
                     2048,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         bar.isComplete();
@@ -119,6 +136,11 @@ module.exports = {
         properties: {
           Destination: {
             type: 'string',
+            required: true
+          },
+          ImageQuality: {
+            message: '1-100',
+            type: 'integer',
             required: true
           },
           ImageSource: {
@@ -142,7 +164,9 @@ module.exports = {
                     640,
                     960,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         //4 inch
@@ -153,7 +177,9 @@ module.exports = {
                     640,
                     1136,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         // 4.7-inch Retina screenshot
@@ -164,7 +190,9 @@ module.exports = {
                     750,
                     1334,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         // 5.5 inch
@@ -175,7 +203,9 @@ module.exports = {
                     1242,
                     2208,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         // iPad Screenshots
@@ -186,7 +216,9 @@ module.exports = {
                     1536,
                     2048,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         // iPad Pro Screenshots
@@ -197,7 +229,9 @@ module.exports = {
                     2048,
                     2732,
                     result.Destination.toString().replace(/ /g,''),
-                    result.ImageSource[i].toString().replace(/ /g,''));
+                    result.ImageSource[i].toString().replace(/ /g,''),
+                    result.ImageQuality,
+                    'png');
         }
 
         bar.isComplete();
