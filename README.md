@@ -1,8 +1,6 @@
 # Minion
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-[![HeaderImage](https://i.imgur.com/JlOU91p.jpg)]()
-
 Making a game on Steam is hard. This tool helps you with some of the requirements needed for publishing your game on Steam.
 
 #### Steam Game Creation Tools: 
